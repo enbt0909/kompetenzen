@@ -1,0 +1,84 @@
+body {
+  background-color: #58585876;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.methodische-kompetenzen,
+.soziale-kompetenzen,
+.fachliche-kompetenzen,
+.selbstkompetenz {
+  position: relative;
+  width: 400px;
+  min-height: 240px;
+  margin: 10px;
+  background-color: #e5e2e2;
+  padding: 20px 30px 30px;
+  border-radius: 10px;
+  border: 5px solid #0f0;
+}
+
+.methodische-kompetenzen ul,
+.soziale-kompetenzen ul,
+.fachliche-kompetenzen ul,
+.selbstkompetenz ul {
+  margin-bottom: 0;
+  border: solid 3px #000;
+  background-color: #fff;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.methodische-kompetenzen img,
+.soziale-kompetenzen img,
+.fachliche-kompetenzen img,
+.selbstkompetenz img {
+  position: absolute;
+  right: 10%;
+  top: calc(50% - 25px);
+  margin: 0 0 10px 10px;
+  width: 40%;
+}
+
+.fachliche,
+.self-kompetenz {
+  padding: 20px 30px 44px;
+}
+
+h1,
+.paragraph {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgba(165, 42, 42, 0.929);
+}
+
+li {
+  /* list-style-type: disc; */
+  /* list-style-type: circle; */
+  /* list-style-type: square; */
+  /* list-style-type: decimal; */
+  /* list-style-type: georgian; */
+  /* list-style-type: trad-chinese-informal; */
+  /* list-style-type: kannada; */
+  /* list-style-type:"*"; */
+  /* list-style: none; */
+  margin: 15px 0;
+}
+
+li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
